@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Back Lay Betting Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="calculator">
+    <h1>Back / Lay Betting Calculator</h1>
+
+    <div class="input-group">
+      <label>Back Odds</label>
+      <input type="number" id="backOdds" placeholder="e.g. 2.5">
+    </div>
+
+    <div class="input-group">
+      <label>Back Stake</label>
+      <input type="number" id="backStake" placeholder="e.g. 100">
+    </div>
+
+    <div class="input-group">
+      <label>Lay Odds</label>
+      <input type="number" id="layOdds" placeholder="e.g. 2.2">
+    </div>
+
+    <div class="input-group">
+      <label>Commission (%)</label>
+      <input type="number" id="commission" placeholder="e.g. 5">
+    </div>
+
+    <button onclick="calculate()">Calculate</button>
+
+    <div class="result">
+      <p id="layStakeResult"></p>
+      <p id="profitIfWin"></p>
+      <p id="profitIfLose"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
